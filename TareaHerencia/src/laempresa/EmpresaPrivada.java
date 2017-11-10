@@ -33,7 +33,7 @@ public class EmpresaPrivada extends Empresa {
         String cadena_trabajadores="";
         Trabajador []A = obtener_trabajadores();
         for (int i=0; i<A.length; i++){
-            cadena_trabajadores=String.format("%s%s", cadena_trabajadores, A[i]);
+            cadena_trabajadores+=(i+1)+")\t"+A[i];
         }
         String cadena = String.format("%s\n"
                 + "Ventas: $ %d\n"
